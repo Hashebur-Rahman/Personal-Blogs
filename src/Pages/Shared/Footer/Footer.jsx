@@ -20,8 +20,8 @@ export default function Footer() {
                     </nav>
                     <nav>
                         <header className="footer-title">Company</header>
-                        <a href='/app/about' className="link link-hover">About us</a>
-                        <a href='/app/contact' className="link link-hover">Contact</a>
+                        <a href='/app/about' className="link link-hover">About Me</a>
+                        <a href='/app/contact' className="link link-hover">Contact Me</a>
                         <a href='/' className="link link-hover">Jobs</a>
                         <a href='/' className="link link-hover" >More</a>
 
@@ -38,7 +38,7 @@ export default function Footer() {
 
             <footer className="footer footer-center p-4 bg-base-300 text-base-content">
                 <aside>
-                    <p>Copyright © 2023 - All right reserved by  Programming Agency Ltd</p>
+                    <p>Copyright © 2023 - All right reserved by   Dev Hashebur Rahman</p>
                 </aside>
             </footer>
         </div>

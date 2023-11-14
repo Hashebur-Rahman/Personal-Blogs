@@ -19,10 +19,10 @@ export default function NavigationBar() {
     const navOption =
         <>
             <li><Link className='hover:border-b-2 border-red-500' to='home'>Home</Link></li>
-            <li><Link className='hover:border-b-2 border-red-500' to='uploadImage'>Image Uploading</Link></li>
+            <li><Link className='hover:border-b-2 border-red-500' to='uploadImage'>Host Image  </Link></li>
             <li><Link className='hover:border-b-2 border-red-500' to='cvMaker'>CV Maker</Link></li>
-            <li><Link className='hover:border-b-2 border-red-500' to='basenessCard'>basenessCard  Maker</Link></li>
-            <li><Link className='hover:border-b-2 border-red-500' to='studentCard'> Student Id Maker</Link></li>
+            <li><Link className='hover:border-b-2 border-red-500' to='basenessCard'>BasenessCard  Maker</Link></li>
+            <li><Link className='hover:border-b-2 border-red-500' to='studentCard'>Student Id Maker</Link></li>
             <li><Link className='hover:border-b-2 border-red-500' to='https://dev-hasahebur.vercel.app/'> About Me</Link></li>
 
 

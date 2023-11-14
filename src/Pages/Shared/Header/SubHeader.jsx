@@ -1,4 +1,5 @@
 import { AddIcCall, Email, Facebook, GitHub, Instagram, LinkedIn, Twitter, } from '@mui/icons-material'
+import LanguageIcon from '@mui/icons-material/Language';
 import React from 'react'
 
 export default function SubHeader() {
@@ -8,14 +9,15 @@ export default function SubHeader() {
                 <span><AddIcCall /> 01777441366</span >
                 <span className='ml-5'><Email /> dev.hashebur@gmail.com</span>
             </div>
- 
+
             <div >
                 Follow Us :
-                <span> <a href="#"> <Facebook /></a></span>
-                <span> <a href="#"> <Instagram /></a></span>
-                <span> <a href="#"> <Twitter /></a></span>
-                <span> <a href="#"> < LinkedIn /></a></span>
-                <span> <a href="#"> < GitHub /></a></span>
+                <span> <a title='Facebook' href="https://www.facebook.com/dev.hashebur.rahman/"> <Facebook /></a></span>
+                <span> <a title='Instagram' href="https://www.instagram.com/hashebur_rahman/"> <Instagram /></a></span>
+                <span> <a title='Twitter' href="https://twitter.com/dev_hashebur"> <Twitter /></a></span>
+                <span> <a title='Linkedin' href="https://www.linkedin.com/in/hashebur-rahman/"> < LinkedIn /></a></span>
+                <span> <a title='GitHub' href="https://github.com/hashebur"> < GitHub /></a></span>
+                <span> <a title='Portfolio Web' href="https://dev-hasahebur.vercel.app/"> < LanguageIcon /></a></span>
 
             </div>
         </div>

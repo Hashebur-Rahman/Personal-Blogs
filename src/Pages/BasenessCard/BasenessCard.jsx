@@ -56,9 +56,9 @@ export default function BasenessCard() {
           </Box>
         </Box>
       </Box>
-      <Box className='bg-white px-5'>
+      <Box className='bg-white px-5 py-10'>
         <form onSubmit={handleSubmit(onSubmit)}>
-          <Box className='text-center bg-white text-4xl mb-5 border-b-2 '> Making Professional a Baseness Card </Box>
+          <Box className='text-center bg-white text-4xl mb-5  text-black'> Making Professional a Baseness Card </Box>
 
           <Grid container spacing={2}>
             <Grid item xs={6}>
@@ -112,9 +112,9 @@ export default function BasenessCard() {
                 error={Boolean(errors.phone)}
                 helperText={errors.phone && errors.phone.message}
               />
-            </Grid>  
+            </Grid>
 
-            
+
             <Grid item xs={6}>
               <TextField
                 label="Address"
@@ -124,15 +124,14 @@ export default function BasenessCard() {
                 helperText={errors.address && errors.address.message}
               />
             </Grid>
-            <Grid item xs={6}>
-              <input type="file" accept="image/*" name="image" id="" onChange={handleImage} />
-            </Grid>
-
             {imageUrl && ( // Display the image only when imageURL is not empty
               <Grid item xs={12}>
                 <img src={imageUrl} alt="Uploaded" placeholder='photo' className='h-40 w-40 border-2' style={{ maxWidth: '100%' }} />
               </Grid>
             )}
+            <Grid item xs={6}>
+              <input type="file" accept="image/*" name="image" id="" onChange={handleImage} />
+            </Grid>
             <Grid item xs={12}>
               <Button type="submit" variant="contained" color="primary">
                 Submit

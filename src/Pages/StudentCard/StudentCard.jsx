@@ -60,9 +60,9 @@ export default function StudentCard() {
                     </Box>
                 </Box>
             </Box>
-            <Box className='bg-white px-5'>
+            <Box className='bg-white px-5 py-10'>
                 <form onSubmit={handleSubmit(onSubmit)}>
-                    <Box className='text-center bg-white text-4xl mb-5 border-b-2 '> Add Your Information To Make your Student ID card</Box>
+                    <Box className='text-center bg-white text-black text-4xl mb-5 '> Add Your Information To Make your Student ID card</Box>
 
                     <Grid container spacing={2}>
                         <Grid item xs={6}>
@@ -127,35 +127,6 @@ export default function StudentCard() {
                         </Grid>
                         <Grid item xs={6}>
                             <TextField
-                                label="Group"
-                                fullWidth
-                                select
-                                {...register("group", { required: 'Group is required' })}
-                                error={Boolean(errors.group)}
-                            >
-                                <MenuItem value="Science">Science</MenuItem>
-                                <MenuItem value="Arts">Arts</MenuItem>
-                                <MenuItem value="commerce">Commerce</MenuItem>
-                            </TextField>
-                        </Grid>
-
-                        <Grid item xs={6}>
-                            <TextField
-                                label="Blood Group"
-                                fullWidth
-                                select
-                                {...register("bloodGroup", { required: 'Blood Group is required' })}
-                                error={Boolean(errors.bloodGroup)}
-                            >
-                                <MenuItem value="A+">A+</MenuItem>
-                                <MenuItem value="B+">B+</MenuItem>
-                                <MenuItem value="AB+">AB+</MenuItem>
-                                <MenuItem value="O+">O+</MenuItem>
-                            </TextField>
-                        </Grid>
-
-                        <Grid item xs={6}>
-                            <TextField
                                 label="Date of Birth"
                                 fullWidth
                                 type="date"
@@ -169,6 +140,30 @@ export default function StudentCard() {
 
                         <Grid item xs={6}>
                             <TextField
+                                label="Group"
+                                fullWidth
+                                select
+                                {...register("group", { required: 'Group is required' })}
+                                error={Boolean(errors.group)}
+                            >
+                                <MenuItem value="Science">Science</MenuItem>
+                                <MenuItem value="Arts">Arts</MenuItem>
+                                <MenuItem value="commerce">Commerce</MenuItem>
+                            </TextField>
+                        </Grid>
+                        <Grid item xs={6}>
+                            <TextField
+                                label="Session"
+                                fullWidth
+                                {...register("session", { required: 'session is required' })}
+                                error={Boolean(errors.session)}
+                                helperText={errors.session && errors.session.message}
+                            />
+                        </Grid>
+
+
+                        <Grid item xs={6}>
+                            <TextField
                                 label="Student Id  Number"
                                 fullWidth
                                 type="number" // Set type as "date"
@@ -176,6 +171,20 @@ export default function StudentCard() {
                                 error={Boolean(errors.idNumber)}
                                 helperText={errors.idNumber && errors.idNumber.message}
                             />
+                        </Grid>
+                        <Grid item xs={6}>
+                            <TextField
+                                label="Blood Group"
+                                fullWidth
+                                select
+                                {...register("bloodGroup", { required: 'Blood Group is required' })}
+                                error={Boolean(errors.bloodGroup)}
+                            >
+                                <MenuItem value="A+">A+</MenuItem>
+                                <MenuItem value="B+">B+</MenuItem>
+                                <MenuItem value="AB+">AB+</MenuItem>
+                                <MenuItem value="O+">O+</MenuItem>
+                            </TextField>
                         </Grid>
 
                         <Grid item xs={6}>
